@@ -1,0 +1,8 @@
+
+/tmp/*
+/vendor
+.byebug_history
+.gitattributes
+.idea
+/log
+.idea/recipeApp.iml

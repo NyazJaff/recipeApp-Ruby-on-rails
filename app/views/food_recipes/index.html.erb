@@ -1,0 +1,20 @@
+
+<table>
+<tr>
+  <th>title</th>
+  <th>author</th>
+</tr>
+  <% @recipes.each do |s| %>
+    <tr>
+      <td><%= s.title %></td>
+      <td><%= s.author %></td>
+  <% end %>
+</table>
+
+<br>
+<div class="digg_pagination">
+  <div class="page_info">
+    <%= page_entries_info @recipes %>
+  </div>
+  <%= will_paginate @recipes, :container => false %>
+</div>
