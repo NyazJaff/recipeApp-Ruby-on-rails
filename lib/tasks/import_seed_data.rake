@@ -30,7 +30,7 @@ task :import_seed_data  => [:environment] do
         recipe.save
 
        recipe_h[:ingredients].map do |description|
-         byebug
+
           ingredient = Ingredient.find_or_create_by(description: description)
           RecipeIngredient.find_or_create_by(
             food_recipe: recipe,
