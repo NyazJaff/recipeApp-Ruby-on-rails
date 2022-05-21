@@ -1,6 +1,6 @@
 class Ingredient < ApplicationRecord
 
-  has_many :food_recipes
+  has_many :recipe_ingredients
   validates :description, presence: true, uniqueness: true
 
   before_save :shorten_description

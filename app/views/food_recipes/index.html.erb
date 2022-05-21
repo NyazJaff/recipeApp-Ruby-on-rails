@@ -1,13 +1,21 @@
 
+<%= form_tag food_recipes_path, method: "GET" do %>
+  <%= label_tag :search_by_ingredient %>
+  <%= text_field_tag :search_by_ingredient, params[:search_by_ingredient] %>
+  <%= submit_tag "Search" %>
+<% end %>
+
 <table>
 <tr>
   <th>title</th>
   <th>author</th>
+  <th>ingredients</th>
 </tr>
-  <% @recipes.each do |s| %>
+  <% @recipes.each do |recipe| %>
     <tr>
-      <td><%= s.title %></td>
-      <td><%= s.author %></td>
+      <td><%= recipe.title %></td>
+      <td><%= recipe.author %></td>
+      <td><%= recipe.ingredients_to_s %></td>
   <% end %>
 </table>
 
