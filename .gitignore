@@ -6,3 +6,4 @@
 .idea
 /log
 .idea/recipeApp.iml
+.env
