@@ -1,24 +1,6 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- Import the seed data by running 'rake import_seed_data'
+ 
+- Due to Heroku database limitation as a free user,I have only imported small amount of the seed data onto Heroku. 
+- Heroku link https://limitless-fortress-33471.herokuapp.com/
